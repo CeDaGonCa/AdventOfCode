@@ -14,7 +14,9 @@ public abstract class AOCReader {
     public List<String> readFile (String filename) {
         List<String> list = new ArrayList<>();
         try {
-            FileReader in = new FileReader(filename);
+            StringBuilder line = new StringBuilder();
+            line.append("src/AdventofCode2025/").append(filename).append("/").append("input").append(filename).append(".txt");
+            FileReader in = new FileReader(line.toString());
             BufferedReader br = new BufferedReader(in);
             while (br.ready()){
                 list.add(br.readLine());

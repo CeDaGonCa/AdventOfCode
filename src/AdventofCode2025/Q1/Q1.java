@@ -5,11 +5,11 @@ import AdventofCode2025.AOCReader;
 
 
 public class Q1 extends AOCReader {
-    public Q1(String filename) {
-        super(filename);
+    public Q1() {
+        super("Q1");
     }
     public static void main(String[] args) {
-        Q1 obj = new Q1("src/AdventofCode2025/Q1/inputP1.txt");
+        Q1 obj = new Q1();
         //P1
         obj.solve();
     }
